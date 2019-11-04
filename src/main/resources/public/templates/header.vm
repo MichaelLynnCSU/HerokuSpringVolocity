@@ -1,0 +1,36 @@
+<h1>My jQuery JSON Web Page <p id="testing">Guest</p> </h1>
+
+<script>
+    var test = '$name';
+    var res = test.substring(1);
+    //console.log(res.length);
+
+    console.log(res);
+    console.log(res.localeCompare("name"));
+
+    if(res.localeCompare("name") == 1){
+        console.log(res);
+        document.getElementById("testing").innerHTML = test;
+    }
+
+
+  </script>
+
+<input type="button" value = "JSONTestGetData" onclick="JSONTestGetData()">
+
+<input type="button" id = "JSONTestUserJavaSCript" value = "JSONTestUserJavaSCript" onclick="JSONTestUserJavaSCript()">
+
+<input type="button" id = "JSONTestUserJquery" value = "JSONTestUserJquery">
+
+<form class="form" action="" method="get">
+    <input type="text" id="id" value = "103">
+    <input type="text" id="name" value = "Mike">
+    <input type="text" id="last" value = "Lynn">
+    <input type="text" id="email" value = "Email">
+    <input type="button" value = "Send" onclick="JSONTestUser()">
+</form>
+
+
+<input type="button" value = "JSONTestSearchData" onclick="JSONTestSearchData()">
+<input type="button" value = "JSONTestSortData" onclick="JSONTestSortData()">
+<input type="button" value = "JSONTestJson" onclick="JSONTestJson()">
